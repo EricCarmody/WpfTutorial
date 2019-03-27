@@ -35,6 +35,7 @@ namespace WpfTutorial
             Title = e.GetPosition(this).ToString();
         }
 
+        #region fuinctionalButtons
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("The App is closing");
@@ -58,5 +59,20 @@ namespace WpfTutorial
             textBox.Text += (e.Source as Button).Content.ToString();
         }
 
+        #endregion
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+         
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = null;
+        }
     }
 }
+
+    
+
