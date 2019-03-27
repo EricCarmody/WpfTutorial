@@ -53,6 +53,10 @@ namespace WpfTutorial
             saveDlg.ShowDialog();
         }
 
-        
+        private void NumButton_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.Text += (e.Source as Button).Content.ToString();
+        }
+
     }
 }
